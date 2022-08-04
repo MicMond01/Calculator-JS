@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <div data-previous-oper id="data-previous-oper" class="text-display">0</div>
+            <div data-current-oper id="data-current-oper" class="text-display">0</div>
+        </div>
+        <div class="keys-container">
+            <button data-clear-all id="clear" class="key-el">AC</button>
+            <button data-delete class="delete key-el" OnClick="Calc.Input.value = ''">DEL</button>
+            <button data-operation class="percent sign-keys">%</button>
+            <button data-number="1" class="key-el num-el">1</button>
+            <button data-number="2" class="key-el num-el">2</button>
+            <button data-number="3" class="key-el num-el">3</button>
+            <button data-number="4" class=" key-el num-el">4</button>
+            <button data-number="5" class="key-el num-el">5</button>
+            <button data-number="6" class="key-el num-el">6</button>
+            <button data-number="7" class="key-el num-el">7</button>
+            <button data-number="8" class="key-el num-el">8</button>
+            <button data-number="9" class="key-el num-el">9</button>
+            <button data-operation="divide" class="divide sign-keys">/</button>
+            <button data-operation="multiply" class="multiply sign-keys">*</button>
+            <button data-operation="minus" class="subtraction sign-keys">-</button>
+            <button data-operation="addition" class="addition sign-keys">+</button>
+            <button data-number="0" class="zero num-el">0</button>
+            <button data-number="." class="dot num-el">.</button>
+            <button data-equal id="equals" class="equality">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
